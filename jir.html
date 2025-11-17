@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Promo Sushi Khas Jepang</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #222;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1553621042-f6e147245754?w=1200') center/cover no-repeat;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 20px;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+    .sushi-img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .btn {
+      padding: 12px 20px;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background: #d62828;
+    }
+    #map {
+      width: 100%;
+      height: 350px;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body><header>
+  <h1>Sushi Jepang Asli untuk Lidah Indonesia</h1>
+  <p>Rasa autentik, kualitas premium, pengalaman tak terlupakan.</p>
+</header><div class="container">
+  <div class="card">
+    <h2>Kenapa Harus Sushi Kami?</h2>
+    <p>
+      Kami menghadirkan Sushi khas Jepang dengan bahan segar, teknik profesional,
+      dan cita rasa yang cocok di lidah semua kalangan.
+    </p>
+    <img src="https://files.catbox.moe/xkuiqm.jpg" class="sushi-img" alt="Sushi Jepang" />
+  </div>  <div class="card">
+    <h2>Lokasi Kami</h2>
+    <p>Datang dan nikmati langsung di lokasi kami di Sungai Buaya, Kecamatan Silinda, Sumatra Utara.</p>
+    <button class="btn" onclick="openMap()">Lihat di Map</button>
+    <div id="map"></div>
+  </div>
+</div><script>
+  let mapInited = false;
+
+  function openMap() {
+    if (!mapInited) {
+      const iframe = document.createElement('iframe');
+      iframe.width = '100%';
+      iframe.height = '350';
+      iframe.style.border = '0';
+      iframe.loading = 'lazy';
+      iframe.referrerpolicy = 'no-referrer-when-downgrade';
+      iframe.src = "https://www.google.com/maps?q=Sungai+Buaya,+Silinda,+Sumatra+Utara&output=embed";
+      document.getElementById('map').appendChild(iframe);
+      mapInited = true;
+    }
+    document.getElementById('map').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>  <footer style="text-align:center;padding:20px;margin-top:40px;font-size:14px;color:#555;">
+    <p>Hubungi Kami: <b>WhatsApp: 6282144895398</b> | <b>Email: jferdanamanalu@gmail.com</b></p>
+    <p>&copy; 2025 Dibuat oleh Jona</p>
+  </footer></body>
+</html>
