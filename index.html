@@ -61,12 +61,22 @@
       border-radius: 12px;
       margin-top: 10px;
     }
+    .price-list ul {
+      padding-left: 20px;
+      line-height: 1.8;
+      font-size: 16px;
+    }
   </style>
 </head>
-<body><header>
+<body>
+
+<header>
   <h1>Sushi Khas Jepang Asli untuk Lidah Indonesia</h1>
   <p>Rasa autentik, kualitas premium, pengalaman tak terlupakan.</p>
-</header><div class="container">
+</header>
+
+<div class="container">
+
   <div class="card">
     <h2>Kenapa Harus Sushi Kami?</h2>
     <p>
@@ -74,13 +84,31 @@
       dan cita rasa yang cocok di lidah semua kalangan.
     </p>
     <img src="https://files.catbox.moe/xkuiqm.jpg" class="sushi-img" alt="Sushi Jepang" />
-  </div>  <div class="card">
+  </div>
+
+  <div class="card price-list">
+    <h2>Daftar Harga Sushi</h2>
+    <ul>
+      <li>Sushi Roll Original — <b>Rp 15.000</b></li>
+      <li>Sushi Salmon — <b>Rp 20.000</b></li>
+      <li>Sushi Tuna — <b>Rp 18.000</b></li>
+      <li>Sushi Crabstick — <b>Rp 16.000</b></li>
+      <li>Chicken Katsu Roll — <b>Rp 17.000</b></li>
+      <li>Mix Roll (3 Varian) — <b>Rp 25.000</b></li>
+      <li>Premium Bento Sushi — <b>Rp 30.000</b></li>
+    </ul>
+  </div>
+
+  <div class="card">
     <h2>Lokasi Kami</h2>
     <p>Datang dan nikmati langsung di lokasi kami di Sungai Buaya, Kecamatan Silinda, Sumatra Utara.</p>
     <button class="btn" onclick="openMap()">Lihat di Map</button>
     <div id="map"></div>
   </div>
-</div><script>
+
+</div>
+
+<script>
   let mapInited = false;
 
   function openMap() {
@@ -97,8 +125,12 @@
     }
     document.getElementById('map').scrollIntoView({ behavior: 'smooth' });
   }
-</script>  <footer style="text-align:center;padding:20px;margin-top:40px;font-size:14px;color:#555;">
-    <p>Hubungi Kami: <b>WhatsApp: 6282144895398</b> | <b>Email: jferdanamanalu@gmail.com</b></p>
-    <p>&copy; 2025 Dibuat oleh Jona</p>
-  </footer></body>
+</script>
+
+<footer style="text-align:center;padding:20px;margin-top:40px;font-size:14px;color:#555;">
+  <p>Hubungi Kami: <b>WhatsApp: 6282144895398</b> | <b>Email: jferdanamanalu@gmail.com</b></p>
+  <p>&copy; 2025 Dibuat oleh Jona</p>
+</footer>
+
+</body>
 </html>
